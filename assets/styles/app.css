@@ -1,0 +1,62 @@
+/* Import Bootstrap CSS */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+/* Tu CSS personalizado */
+body {
+    background-color: rgb(243, 216, 192);
+}
+
+.card {
+    background-color: rgba(243, 216, 192, 0.317);
+    box-shadow: 0 4px 8px rgba(109, 105, 101, 0.317); /* Añadir desplazamiento y desenfoque */
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.label {
+  color:  rgb(97, 52, 43);
+}
+
+.btn {
+    background-color: rgb(165, 90, 75);
+    color: white;
+}
+
+.btn:hover {
+    background-color: rgb(140, 70, 60);
+    color: white;
+}
+
+.guest-container {
+    padding: 20px;
+}
+
+.container-logo {
+    background-image: url('/images/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20rem;
+    height: 20rem;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.table-custom {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.table-custom th,
+.table-custom td {
+    vertical-align: middle;
+}
+
+.no-registrations {
+    text-align: center;
+    font-style: italic;
+}

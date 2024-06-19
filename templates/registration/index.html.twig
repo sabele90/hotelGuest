@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Registrations
+{% endblock %}
+
+{% block body %}
+	<div class="container" style="margin-top:150px">
+		<div class="header">
+			<h1 class="label">All Registrations</h1>
+		</div>
+
+		<div class="text-end mb-3">
+			<a href="{{ path('guest_new') }}" class="btn">Add Guest</a>
+		</div>
+
+		<div class="table-responsive table-custom">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Guests</th>
+						<th>Check-in Date</th>
+						<th>Check-out Date</th>
+
+					</tr>
+				</thead>
+				<tbody>
+					{% for registration in registrations %}
+						<tr>
+							<td>
+								<ul class="list-unstyled">
+									{% for guest in registration.guests %}
+										<li>{{ guest.name }}
+											{{ guest.surname }}</li>
+									{% endfor %}
+								</ul>
+							</td>
+							<td>{{ registration.checkInDate|date('Y-m-d') }}</td>
+							<td>{{ registration.checkOutDate|date('Y-m-d') }}</td>
+
+						</tr>
+					{% else %}
+						<tr>
+							<td colspan="3" class="no-registrations">No registrations found</td>
+						</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</div>
+	</div>
+{% endblock %}

@@ -1,0 +1,21 @@
+{# templates/emails/guest_reservation.html.twig #}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Reservation Confirmation</title>
+</head>
+<body>
+    <h1>Reservation Confirmation</h1>
+  
+    <p>Your reservation has been confirmed. Here are the details:</p>
+    <ul>
+        <li>Guest Name: {{ guest.name }} {{ guest.surname }}</li>
+        <li>Check-in Date: {{ registration.checkInDate|date('Y-m-d') }}</li>
+        <li>Check-out Date: {{ registration.checkOutDate|date('Y-m-d') }}</li>
+    </ul>
+    <p>Thank you for choosing our service.</p>
+
+</body>
+</html>
