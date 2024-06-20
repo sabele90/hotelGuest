@@ -1,0 +1,10 @@
+{# templates/default/index.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block body %}
+    <h1>Welcome to our website!</h1>
+    <p>Please <a href="{{ path('app_login') }}">login</a> to access more features.</p>
+{% endblock %}
