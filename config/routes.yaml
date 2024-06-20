@@ -22,7 +22,10 @@ guest_edit:
   path: /guest/{id}/edit
   controller: App\Controller\GuestController::edit
 
-api_endpoint:
-  path: /api/endpoint
-  controller: App\Controller\ApiController::index
-  methods: [POST]
+webhook_send:
+    path: '/webhook/send'
+    controller: 'App\Controller\WebhookController::sendWebhook'
+    methods: ['GET', 'POST']
+
+
+
