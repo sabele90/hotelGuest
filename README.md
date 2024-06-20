@@ -2,7 +2,6 @@
 
 Symfony Assignment
 ![alt text](public/images/logo.png)
-
 Project: Hotel Guest Management System
 Description
 This repository contains the Hotel Guest Management System, a web application designed to streamline the process of guest registration in hotels. The system offers user authentication, guest management, and additional features such as email notifications and rate limiting.
